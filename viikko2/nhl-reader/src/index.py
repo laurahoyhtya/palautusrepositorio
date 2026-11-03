@@ -11,9 +11,15 @@ def main():
         player = Player(player_dict)
         players.append(player)
 
-    for player in players:
-        if player.nationality == "FIN":
-            print(f"{player.name} ({player.team}): {player.goals} goals, {player.assists} assists")
+    finnish_players = filter(lambda player: player.nationality == "FIN", players)
+    sorted_players = sorted(
+        finnish_players,
+        key=lambda player: player.goals + player.assists,
+        reverse=True,
+    )
+
+    for player in sorted_players:
+        print(f"{player.name} ({player.team}): {player.goals} goals, {player.assists} assists")
 
 if __name__ == "__main__":
     main()
