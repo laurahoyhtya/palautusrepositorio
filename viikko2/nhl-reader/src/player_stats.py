@@ -13,3 +13,13 @@ class PlayerStats:
             key=lambda player: player.goals + player.assists,
             reverse=True,
         )
+
+    def top_goal_scorers(self, how_many):
+        """Palauttaa how_many eniten maaleja tehnyttä pelaajaa
+        laskevassa maalijärjestyksessä."""
+        players = self.player_reader.get_players()
+        return sorted(
+            players,
+            key=lambda player: player.goals,
+            reverse=True,
+        )[:how_many]
