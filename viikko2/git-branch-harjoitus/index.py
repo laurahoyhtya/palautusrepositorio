@@ -5,6 +5,8 @@ from tulo import tulo
 
 # muutos main-haarassa
 
+# muutos kopion main-haarassa
+
 logger("aloitetaan ohjelma")
 
 x = int(input("luku 1: "))
