@@ -29,16 +29,31 @@ def _add_players_to_table(table, players):
         )
 
 
+def _get_players_to_display(stats, season):
+    selection = input("Show players by (N)ationality or (T)eam? ").strip().upper()
+    while selection not in ("N", "T"):
+        print("Please enter N for nationality or T for team.")
+        selection = input("Show players by (N)ationality or (T)eam? ").strip().upper()
+
+    if selection == "T":
+        team = input("Team abbreviation (e.g. BOS): ").strip().upper()
+        return stats.top_scorers_by_team(team), f"Players in {season} (Team {team})"
+
+    nationality = input("Country code (e.g. FIN): ").strip().upper()
+    return (
+        stats.top_scorers_by_nationality(nationality),
+        f"Players in {season} ({nationality})",
+    )
+
+
 def main():
     season = input("Season (e.g. 2024-25): ").strip()
-    nationality = input("Country code (e.g. FIN): ").strip().upper()
-
     url = f"https://studies.cs.helsinki.fi/nhlstats/{season}/players"
     reader = PlayerReader(url)
     stats = PlayerStats(reader)
-    players = stats.top_scorers_by_nationality(nationality)
+    players, title = _get_players_to_display(stats, season)
 
-    table = _create_table(f"Players in {season} ({nationality})")
+    table = _create_table(title)
     _add_players_to_table(table, players)
     Console().print(table)
 
