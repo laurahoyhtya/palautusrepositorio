@@ -1,3 +1,4 @@
+# pylint: disable-next=too-few-public-methods  # This class intentionally provides one query operation.
 class PlayerStats:
     def __init__(self, player_reader):
         self.player_reader = player_reader
