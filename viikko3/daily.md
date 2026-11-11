@@ -1,0 +1,5 @@
+# Daily scrum ja jumista kertominen
+
+Harjoituksissa vastaan tuli kolme erilaista jumia: työ odotti toisen tiimiläisen koodikatsausta, vastaan tuli itselle vieras teknologia ja tehtävän hyväksymiskriteerit olivat epäselvät. Kaikissa tilanteissa pelkkä toteamus ”olen jumissa” jätti tiimin epätietoiseksi. Hyödyllisempää oli kertoa lyhyesti, mitä olin tekemässä, mitä olin jo kokeillut ja mikä estää etenemisen. Samalla pystyin esittämään konkreettisen avunpyynnön: voisiko joku katsoa pull requestin, neuvoa alkuun teknologian kanssa tai tarkentaa vaatimusta?
+
+Hyvä daily scrum on napakka ja auttaa tiimiä koordinoimaan päivän työtä, ei vain raportoimaan tekemisiä ulkopuoliselle. Jokainen kertoo olennaisen etenemisestään, seuraavasta askeleestaan ja mahdollisista esteistä. Jumista kannattaa puhua heti, jotta muut voivat tarjota apua ja työn järjestystä voidaan tarvittaessa muuttaa. Kaikkea ongelmanratkaisua ei tarvitse tehdä yhteisessä palaverissa: sopikaa ketkä jatkavat asian selvittämistä ja milloin, ja siirtykää sitten yksityiskohtiin erikseen. Avoin, syyllistämätön ilmapiiri tekee avun pyytämisestä helpompaa.
