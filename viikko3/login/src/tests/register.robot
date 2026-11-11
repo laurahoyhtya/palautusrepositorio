@@ -9,6 +9,14 @@ Register With Valid Username And Password
     Register User  matti  salasana123
     Registration Should Succeed
 
+Register With Matching Password And Confirmation
+    Register User With Confirmation  matti6  salasana123  salasana123
+    Registration Should Succeed
+
+Register With Mismatched Password And Confirmation
+    Register User With Confirmation  matti7  salasana123  salasana456
+    Registration Should Fail With Message  Password and password confirmation do not match
+
 Register With Password That Contains Digits
     Register User  matti2  kalle123
     Registration Should Succeed
@@ -51,6 +59,13 @@ Register User
     Fill Text  id=username  ${username}
     Fill Secret  id=password  $password
     Fill Secret  id=password_confirmation  $password
+    Click  button >> text=Register
+
+Register User With Confirmation
+    [Arguments]  ${username}  ${password}  ${password_confirmation}
+    Fill Text  id=username  ${username}
+    Fill Secret  id=password  $password
+    Fill Secret  id=password_confirmation  $password_confirmation
     Click  button >> text=Register
 
 Reset Application Create User And Go To Register Page
