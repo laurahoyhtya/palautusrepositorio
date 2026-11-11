@@ -1,0 +1,8 @@
+# Retrospektiivi
+
+Retrospektiivissä tiimi tarkastelee sprintin jälkeen omaa työskentelyään: mikä sujui hyvin, mitä kannattaa parantaa ja miten muutokset viedään käytäntöön seuraavassa sprintissä. Tavoitteena ei ole etsiä syyllisiä vaan oppia yhdessä ja kehittää toimintatapoja. Tekniikka valitaan ryhmälle sopivaksi. *Start, Stop, Continue, More of, Less of* auttaa nimeämään, mitä aloitetaan, lopetetaan, jatketaan tai tehdään enemmän tai vähemmän. *Glad, Sad, Mad* tuo esiin sprintin ilahduttaneet, harmittaneet ja suututtaneet asiat. Kierrosmallissa osallistujat miettivät vuorollaan, mikä sujui, mitä voisi parantaa ja minkä tekemisen voisi lopettaa.
+
+Kierrosmallissa kirjuri kokoaa havainnot, ja hiljainen miettimisaika antaa jokaiselle mahdollisuuden valmistautua. Tiimi käy myös läpi aiemmin sovittujen parannusten toteutumisen. Lopuksi valitaan vähintään kolme konkreettista parannuskohdetta seuraavaan sprinttiin. Niiden toteutuminen pitää voida tarkistaa: esimerkiksi jokaisen pull requestin katselmointi ennen yhdistämistä on selkeämpi tavoite kuin yleinen toive paremmasta viestinnästä. Retrospektiiviin kannattaa varata noin puoli tuntia, mutta sen ei pitäisi venyä yli tunnin.
+
+Ongelmista puhumista helpottaa psykologinen turvallisuus: jokainen voi kertoa epäonnistumisista, epävarmuudesta ja avuntarpeesta ilman pelkoa syyllistämisestä. Huomio kannattaa suunnata ihmisten arvostelun sijaan prosessiin ja siihen, mitä voidaan muuttaa. Avoimuutta tukevat tasapuoliset puheenvuorot, kuunteleminen, luottamus sekä se, että ryhmä suhtautuu virheisiin oppimisen mahdollisuuksina. Kun parannuksia myös seurataan seuraavassa sprintissä, puhe osoittaa johtavan todellisiin muutoksiin.
+
