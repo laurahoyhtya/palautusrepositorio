@@ -88,3 +88,22 @@ class TestKauppa(unittest.TestCase):
             ],
             [42, 43],
         )
+
+    def test_poistettaessa_tuote_palautetaan_varastoon(self):
+        maito = Tuote(1, "maito", 5)
+        self.varasto_mock.saldo.return_value = 1
+        self.varasto_mock.hae_tuote.return_value = maito
+
+        self.kauppa.lisaa_koriin(1)
+        self.kauppa.poista_korista(1)
+
+        self.varasto_mock.ota_varastosta.assert_called_once_with(maito)
+        self.varasto_mock.palauta_varastoon.assert_called_once_with(maito)
+
+    def test_varastosta_loppunutta_tuotetta_ei_lisata_koriin(self):
+        self.varasto_mock.saldo.return_value = 0
+
+        self.kauppa.lisaa_koriin(1)
+
+        self.varasto_mock.hae_tuote.assert_not_called()
+        self.varasto_mock.ota_varastosta.assert_not_called()
